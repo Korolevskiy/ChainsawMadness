@@ -1,4 +1,4 @@
 # ChainsawMadness
-Annotation: Endless runner game about the Chainsaw Guy escaping from endless darkness, meeting fluffy friends. Try to avoid them, chainsaws are not designed to hugs!
+Аннотация: Бесконечный раннер про парня-бензопилу, пытающегося убежать от всепоглощающей тьмы и встречающего на своем нелегком пути пушистых друзей! Старайся избегать встреч с ними, ведь бензопилы не созданы для обнимашек!
 
-Description: 
+Описание:  
