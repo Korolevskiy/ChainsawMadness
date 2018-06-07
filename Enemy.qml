@@ -12,6 +12,7 @@ Item
     {
             enemy.jumpTo("calm")
             dead = false
+
     }
 
     function setDead() // Смерть врага
@@ -19,8 +20,15 @@ Item
     {
         if(!dead)
         {
-            enemy.jumpTo("dead")
             saw.play()
+            enemy.jumpTo("dead1")
+            enemy.jumpTo("dead2")
+            enemy.jumpTo("dead3")
+            enemy.jumpTo("dead4")
+            enemy.jumpTo("dead5")
+            enemy.jumpTo("dead6")
+            enemy.jumpTo("dead7")
+
             dead = true
         }
     }
@@ -38,6 +46,17 @@ Item
             source: "bunny.png"
             frameCount: 1
             frameWidth: 1234
+            frameHeight: 1500
+            frameX: 0
+            frameY: 254
+        }
+
+        Sprite
+        {
+            name: "dead1"
+            source: "bleedinbunny1.png"
+            frameCount: 1
+            frameWidth: 1234
             frameHeight: 1685
             frameX: 0
             frameY: 354
@@ -45,27 +64,83 @@ Item
 
         Sprite
         {
-            name: "dead"
-            source: "bunny dead.png"
+            name: "dead2"
+            source: "bleedinbunny2.png"
             frameCount: 1
             frameWidth: 1234
             frameHeight: 1685
             frameX: 0
             frameY: 354
         }
+
+        Sprite
+        {
+            name: "dead3"
+            source: "bleedinbunny3.png"
+            frameCount: 1
+            frameWidth: 1234
+            frameHeight: 1685
+            frameX: 0
+            frameY: 354
+        }
+
+        Sprite
+        {
+            name: "dead4"
+            source: "bleedinbunny4.png"
+            frameCount: 1
+            frameWidth: 1234
+            frameHeight: 1685
+            frameX: 0
+            frameY: 354
+        }
+
+        Sprite
+        {
+            name: "dead5"
+            source: "bleedinbunny5.png"
+            frameCount: 1
+            frameWidth: 1234
+            frameHeight: 1685
+            frameX: 0
+            frameY: 354
+        }
+
+        Sprite
+        {
+            name: "dead6"
+            source: "bleedinbunny6.png"
+            frameCount: 1
+            frameWidth: 1234
+            frameHeight: 1685
+            frameX: 0
+            frameY: 354
+        }
+
+        Sprite
+        {
+            name: "dead7"
+            source: "bleedinbunny7.png"
+            frameCount: 1
+            frameWidth: 1234
+            frameHeight: 1500
+            frameX: 0
+            frameY: 254
+        }
     }
-/*
-    PropertyAnimation
+
+  /*  PropertyAnimation
     {
         target: enemy
-        properties: "x"
-        from: -5
-        to: 5
-        duration: 100
-        running: enemy.currentSprite === "anxious"
+        properties: Sprite
+        from: "dead1"
+        to: "dead7"
+        duration: 500
+        running: enemy.currentSprite === "calm"
         loops: Animation.Infinite
     }
 */
+
     SoundEffect
     {
         id: saw

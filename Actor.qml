@@ -20,10 +20,10 @@ Item
             name: "left"
             source: "guy.png"
             frameCount: 1
-            frameWidth: 1180
+            frameWidth: 1280
             frameHeight: 1180
             frameX: 0
-            frameY: 300
+            frameY: 200
         }
 
     }

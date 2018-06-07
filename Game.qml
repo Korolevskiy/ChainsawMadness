@@ -1,8 +1,11 @@
 import QtQuick 2.0
 
+
 Item // Игровое окно
 
 {
+
+
     id: board;
     width: 800
     height: 600
